@@ -4,6 +4,25 @@
         {
             "type": "lldb",
             "request": "launch",
+            "name": "Debug executable 'data_types'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=data_types",
+                    "--package=data_types",
+                    "--manifest-path=${workspaceFolder}/projects/5_data_types/Cargo.toml"
+                ],
+                "filter": {
+                    "name": "data_types",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
             "name": "Debug executable 'variables'",
             "cargo": {
                 "args": [
